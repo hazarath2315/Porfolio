@@ -1,0 +1,298 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1f21;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 0;
+    background-color: #222;
+    text-align: center;
+}
+#about {
+    padding: 4rem 0;
+    background-color: #1a1b1d;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00aaff;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 55%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.about-image {
+    width: 35%;
+    animation: slideIn 1.5s ease-out;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: scale(0);
+    animation: zoomIn 1s ease forwards;
+}
+
+.highlight {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 4rem 0;
+    background-color: #1d1f21;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 20%;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 50%;
+    background-color: #333;
+    border-radius: 300px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 20px;
+    background-color: #00aaff;
+    border-radius: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 0;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 40%;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-link {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #0088cc;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+    background-color: #1d1f21;
+    text-align: center;
+
+
+
+
+    h3{
+
+        font-size: 1.80rem;
+        color: #0088cc;
+        margin-top:150px;
+        font-weight: 490;
+    }
+
+    
+
+
+
+    .sm-container{
+
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:100px;
+        flex-wrap: wrap;
+
+        .sm-box{
+
+        
+            a{
+                text-decoration: none;
+                color: white;
+                margin-top:20px;
+            }
+        }
+    }
+}
+
+form input, form textarea {
+     width:100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0088cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #111;
+    color: #fff;
+}
